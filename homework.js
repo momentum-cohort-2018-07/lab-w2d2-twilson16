@@ -38,7 +38,6 @@ function intersection (array1, array2) {
       } 
     } 
 return output
-
 }
 
 // 4. Create a function called "minimum" that takes an array of numbers and
@@ -81,6 +80,7 @@ return min
 // https://courses.cs.vt.edu/csonline/Algorithms/Lessons/SelectionSort/index.html
 // to see how. This may make more sense to you.
 
+// Evolution 1: 
 // function selectionSort (array) {
 //   var output = []
 //   var arrayCopy = array.slice()
@@ -96,7 +96,7 @@ return min
 // return output
 // }
 
-
+// Evolution 2:
 // //copy original array
 // var arrayCopy = array.slice(0)
 // var sortedArray = []
@@ -137,19 +137,82 @@ return sortedArray
 // and returns an object with the keys "name" and "dob" (date of birth) with
 // those values.
 
+function createUser (name, date) {
+  var newUser = {
+    "name": name, 
+    "dob": date
+}
+return newUser
+}
+
 // 7. Create a function called "calculateAge" that takes a user created from
 // createUser and a Date object considered the current date, and calculates the user's
 // age in years on that date. You can use your code from yesterday's homework.
+
+function calculateAge (newUser, currentDate) {
+    if (currentDate.getTime() < newUser.dob.getTime()) {
+    return 
+}
+else {return Math.floor((currentDate.getTime() - newUser.dob.getTime())/31557600000)
+}
+}
+
 
 // 8. Create a function called "addAge" that takes a user created from createUser
 // and a Date object and adds a new key on the user object, "age", with the age
 // in years the user was on that date.
 
+// User and date object
+function addAge (newUser, currentDate) {
+  // set age variable - Calculate Age function 
+   var age = calculateAge
+   //for new user calculate age
+   for (newUser.dob) {return age
+   }
+   //add new info to object
+   age.push({newUser: name, dob: date, "age": age})
+
+   }
+  //  give back list 
+   return {name, dob, age}
+
+}
+
+
 // 9. Create a function called "createUsers" that takes two arrays of equal
 // length, the first being a list of names and the second being a list of dates of
 // birth, and returns a new array of objects created from those original arrays.
+
+
+function createUsers (array1, array2) {
+  var output = {}
+    var name = array1[i];
+    var date = array2[i];
+    var combinedArray = {"name": name, "dob": dob};
+    for (var i = 2; i < array1.length, i++) {
+        output.push(combinedArray)
+    }
+  return combinedArray
+  }
+
+// for (var i1 = 0; i1 < array1.length; i1++) {
+//   for (var i2 = 0; i2 < array2.length; i2++) {
+//     if (array1[i1] === array2[i2]) {
+//       output.push(array1[i1])
+//     }
+//   } 
+// } 
+// return output
 
 // 10. Create a function called "averageAge" that takes an array of users and
 // a Date object and returns the average age in years of the users on that date.
 // You do not have to handle the situation in which the current date is before
 // a user's date of birth.
+
+// create function
+function averageAge (array[1]) {
+  var age = calculateAge
+  var avgAge = 
+
+
+}
